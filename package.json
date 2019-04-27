@@ -1,0 +1,58 @@
+{
+  "name": "eslint-plugin-pathname",
+  "version": "0.0.0-development",
+  "description": "enforces folder and file names to match desired case style",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "filepath",
+    "folder"
+  ],
+  "author": "leonardo",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive",
+    "test-with-coverage-report": "nyc --reporter=html --reporter=text mocha tests --recursive",
+    "lint": "eslint lib/**/**.js tests/**/**.js",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write lib/**.js tests/**/**.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "check-coverage": "nyc --check-coverage --statements 100 --branches 100 --functions 100 --lines 100 npm run test",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "lodash": "^4.0.0",
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "cz-customizable": "^6.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0",
+    "prettier": "^1.17.0",
+    "semantic-release": "^15.13.3",
+    "travis-deploy-once": "^5.0.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leonardoanalista/eslint-plugin-pathname.git"
+  }
+}
