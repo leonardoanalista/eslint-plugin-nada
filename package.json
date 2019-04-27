@@ -18,6 +18,7 @@
     "prettier": "prettier --single-quote --trailing-comma es5 --write lib/**.js tests/**/**.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "check-coverage": "nyc --check-coverage --statements 100 --branches 100 --functions 100 --lines 100 npm run test",
+    "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
