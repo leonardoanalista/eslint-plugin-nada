@@ -54,7 +54,7 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Supported case options are: kebabCase, camelCase and snakeCase.
+* Supported case options are: `kebabCase`, `camelCase` and `snakeCase`.
 
 ## Roadmap
 

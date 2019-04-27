@@ -26,14 +26,9 @@ module.exports = {
     { value: 'WIP', name: 'WIP:      Work in progress' },
   ],
 
-  // scopes: [{ name: 'accounts' }, { name: 'admin' }, { name: 'exampleScope' }, { name: 'changeMe' }],
-
   // override the messages, defaults are as follows
   messages: {
     type: "Select the type of change that you're committing:",
-    // scope: '\nDenote the SCOPE of this change (optional):',
-    // used if allowCustomScopes is true
-    // customScope: 'Denote the SCOPE of this change:',
     subject: 'Write a SHORT, IMPERATIVE tense description of the change:\n',
     body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
     breaking: 'List any BREAKING CHANGES (optional):\n',
