@@ -26,6 +26,11 @@ ruleTester.run('path-case', rule, {
       code: 'my_file_folder/my_file_name.js // rule: snakeCase',
       options: [{ case: 'snakeCase' }],
     },
+    {
+      filename: 'root.test/my-file-folder.test/my-file-name.spec.js',
+      code: 'root.test/my-file-folder.test/my-file-name.spec.js // rule: kebabCase',
+      options: [{ case: 'kebabCase', ignoreParts: ['.spec', '.test'] }],
+    },
   ],
 
   invalid: [

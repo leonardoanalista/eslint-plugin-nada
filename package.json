@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-pathname",
+  "name": "eslint-plugin-nada",
   "version": "0.0.0-development",
   "description": "enforces folder and file names to match desired case style",
   "keywords": [
@@ -54,6 +54,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/leonardoanalista/eslint-plugin-pathname.git"
+    "url": "https://github.com/leonardoanalista/eslint-plugin-nada.git"
   }
 }
