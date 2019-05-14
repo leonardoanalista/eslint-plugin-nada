@@ -9,6 +9,8 @@ const rule = require('../../../lib/rules/path-case');
 const type = 'Program';
 const ruleTester = new RuleTester();
 
+process.cwd = () => '/systemRoot/myProjectFolder';
+
 ruleTester.run('path-case', rule, {
   valid: [
     {
@@ -30,6 +32,11 @@ ruleTester.run('path-case', rule, {
       filename: 'root.test/my-file-folder.test/my-file-name.spec.js',
       code: 'root.test/my-file-folder.test/my-file-name.spec.js // rule: kebabCase',
       options: [{ case: 'kebabCase', ignoreParts: ['.spec', '.test'] }],
+    },
+    {
+      filename: '/systemRoot/myProjectFolder/src/code/my-file-name-2.js',
+      code: '//systemRoot/myProjectFolder/src/code/my-file-name-2\.js // rule: kebabCase', // eslint-disable-line
+      options: [{ case: 'kebabCase' }],
     },
   ],
 
