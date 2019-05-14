@@ -43,10 +43,12 @@ Add `nada` to the plugins section of your `.eslintrc` configuration file. You ca
 
 Then configure the rules you want to use under the rules section.
 
+First param is the severity level as per eslint standards, where: 0 = off, 1 = warn, 2 = error
+
 ```json
 {
   "rules": {
-    "nada/path-case": [{"case": "kebabCase"}]
+    "nada/path-case": [2, {"case": "kebabCase"}]
   }
 }
 ```
